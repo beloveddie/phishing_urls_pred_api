@@ -21,7 +21,7 @@ app.add_middleware(
 
 # Load the trained model and label encoder
 model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
-classifier = joblib.load('./model/phishing_classifier_20241109_140505.pkl')
+classifier = joblib.load('./model/phishing_classifier_random_forest.pkl')
 label_encoder = joblib.load('./model/label_encoder_20241109_140505.pkl')
 
 # Define input and output schemas
